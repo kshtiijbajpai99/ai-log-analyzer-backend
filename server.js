@@ -68,7 +68,7 @@ function getRiskScore(summary) {
     return Math.min(score, 10);
 }
 
-// 🔥 Analyzer (per chunk)
+// 🔥 Analyzer
 function analyzeLogs(text) {
     const lines = text.split("\n");
 
@@ -126,7 +126,7 @@ function analyzeLogs(text) {
     };
 }
 
-// 🔥 MERGE RESULTS FROM CHUNKS
+// 🔥 Merge results
 function mergeResults(results) {
     let merged = {
         emails: 0,
@@ -194,7 +194,6 @@ app.post("/analyze", upload.single("file"), async (req, res) => {
 
         if (!text) return res.status(400).json({ error: "No input" });
 
-        // 🔥 CHUNK PROCESSING
         const chunks = processChunks(text);
         const results = chunks.map(chunk => analyzeLogs(chunk));
         const finalResult = mergeResults(results);
@@ -226,6 +225,9 @@ app.post("/analyze", upload.single("file"), async (req, res) => {
     }
 });
 
-app.listen(5000, () => {
-    console.log("Server running on http://localhost:5000");
+// ✅ FIXED PORT FOR RENDER
+const PORT = process.env.PORT || 5000;
+
+app.listen(PORT, () => {
+    console.log("Server running on port " + PORT);
 });
