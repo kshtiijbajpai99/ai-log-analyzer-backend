@@ -41,8 +41,8 @@ AI Log Security Analyzer is a full-stack application that detects sensitive data
 ---
 
 ## 🌐 Live Demo
-Frontend: https://your-vercel-link  
-Backend: https://ai-log-analyzer-backend-zbho.onrender.com  
+Frontend: https://ai-log-analyzer-frontend.vercel.app/ 
+Backend: https://ai-log-analyzer-backend-zbho.onrender.com/ 
 
 ---
 
