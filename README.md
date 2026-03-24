@@ -41,8 +41,8 @@ AI Log Security Analyzer is a full-stack application that detects sensitive data
 ---
 
 ## 🌐 Live Demo
-Frontend: https://ai-log-analyzer-frontend.vercel.app/ 
-Backend: https://ai-log-analyzer-backend-zbho.onrender.com/ 
+- Frontend: https://ai-log-analyzer-frontend.vercel.app/  
+- Backend: https://ai-log-analyzer-backend-zbho.onrender.com/  
 
 ---
 
@@ -52,7 +52,3 @@ Backend: https://ai-log-analyzer-backend-zbho.onrender.com/
 ```bash
 npm install
 npm start
-
-
-Frontend Repository: https://github.com/kshtiijbajpai99/ai-log-analyzer-frontend
-Live Demo: https://ai-log-analyzer-frontend.vercel.app/
